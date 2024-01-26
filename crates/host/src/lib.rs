@@ -40,7 +40,7 @@ impl ContextOutput for ExecutionArg {
     }
 }
 
-#[derive(Serialize, Deserialize, Debug)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct HostEnvConfig {
     pub ops: Vec<OpType>,
 }
